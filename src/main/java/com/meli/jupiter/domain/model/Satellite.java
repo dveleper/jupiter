@@ -8,18 +8,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder(toBuilder = true)
 public class Satellite {
-    private int idSatelite;
     private String nombre;
     private double distancia;
     private String mensaje;
-
-    public int getIdSatelite() {
-        return idSatelite;
-    }
-
-    public void setIdSatelite(int idSatelite) {
-        this.idSatelite = idSatelite;
-    }
+    private String coordenadas;
 
     public String getNombre() {
         return nombre;
@@ -43,5 +35,13 @@ public class Satellite {
 
     public void setMensaje(String mensaje) {
         this.mensaje = mensaje;
+    }
+
+    public String getCoordenadas() {
+        return coordenadas;
+    }
+
+    public void setCoordenadas(String coordenadas) {
+        this.coordenadas = coordenadas;
     }
 }

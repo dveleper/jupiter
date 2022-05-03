@@ -2,10 +2,7 @@ package com.meli.jupiter.infrastructure.driven_adapters.persistence.jpa.satellit
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -15,20 +12,10 @@ import javax.persistence.Table;
 @NoArgsConstructor
 public class SatelliteData {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_satelite")
-    private Integer idSatellite;
     private String name;
     private Double distance;
     private String message;
-
-    public Integer getIdSatellite() {
-        return idSatellite;
-    }
-
-    public void setIdSatellite(Integer idSatellite) {
-        this.idSatellite = idSatellite;
-    }
+    private String coordinates;
 
     public String getName() {
         return name;
@@ -52,5 +39,13 @@ public class SatelliteData {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getCoordinates() {
+        return coordinates;
+    }
+
+    public void setCoordinates(String coordinates) {
+        this.coordinates = coordinates;
     }
 }
