@@ -1,3 +1,3 @@
-INSERT INTO SATELLITE (name, distance, message) VALUES ('kenobi', 100.0, '"este", "", "", "mensaje", ""');
-INSERT INTO SATELLITE (name, distance, message) VALUES ('skywalker', 115.5, '"", "es", "", "", "secreto"');
-INSERT INTO SATELLITE (name, distance, message) VALUES ('sato', 142.7, '"este", "", "un", "", ""');
+INSERT INTO SATELLITE (name, distance, message) VALUES ('kenobi', 100.0, 'este, , , ,mensaje, ');
+INSERT INTO SATELLITE (name, distance, message) VALUES ('skywalker', 115.5, 'este, , ,mensaje, ');
+INSERT INTO SATELLITE (name, distance, message) VALUES ('sato', 142.7, 'este, , , ,mensaje, ');

@@ -20,4 +20,11 @@ public class SatelliteDataRepositoryAdapter implements SatelliteRepository {
         List<SatelliteData> satellites = (List<SatelliteData>) satelliteDataRepository.findAll();
         return satelliteMapper.toSatellites(satellites);
     }
+
+    @Override
+    public Satellite save(Satellite satellite) {
+        return null;
+    }
+
+
 }

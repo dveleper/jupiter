@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface SatelliteRepository {
     List<Satellite> getAll();
+
+    Satellite save(Satellite satellite);
 }
