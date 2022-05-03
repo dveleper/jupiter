@@ -11,10 +11,10 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface SatelliteMapper {
     @Mappings({
-            @Mapping(source = "idSatellite", target = "idSatelite"),
             @Mapping(source = "name", target = "nombre"),
             @Mapping(source = "distance", target = "distancia"),
-            @Mapping(source = "message", target = "mensaje")
+            @Mapping(source = "message", target = "mensaje"),
+            @Mapping(source = "coordinates", target = "coordenadas")
     })
     Satellite toSatellite(SatelliteData satelliteData);
 
