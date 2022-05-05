@@ -30,9 +30,10 @@ public class JupiterListener {
     private Mono<SatelliteReply> getSatelliteResult(SatelliteQuery satelliteQuery) {
         return satelliteUseCase.getSatellite(satelliteQuery.getName())
                 .map(satellite -> {
-                    return Mono.just(SatelliteReply
-                            .builder()
-                            .distance(String.valueOf(satellite.getDistancia())).message(satellite.getMensaje())
+                    return Mono.just(SatelliteReply.builder()
+                            .distance(String.valueOf(satellite.getDistancia()))
+                            .message(satellite.getMensaje())
+                            .coordinates(satellite.getCoordenadas())
                             .build());
                 }).orElse(Mono.just(SatelliteReply.builder().build()));
     }
