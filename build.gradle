@@ -26,9 +26,9 @@ dependencies {
 	implementation 'org.reactivecommons:async-commons-starter:1.0.0-beta3'
 	implementation 'io.projectreactor:reactor-core:3.4.17'
 
+	implementation 'org.springdoc:springdoc-openapi-ui:1.6.8'
+
 	implementation 'org.mapstruct:mapstruct:1.4.2.Final'
-	implementation 'io.springfox:springfox-swagger2:3.0.0'
-	implementation 'io.springfox:springfox-swagger-ui:3.0.0'
 	annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
