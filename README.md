@@ -37,9 +37,9 @@ La documentación de las APIs con Swagger se puede visualizar al desplegar cada 
 
 Meteoro:
 Este micro tiene tres instancias simulando los tres satelites:
-* kenobi - http://localhost:8096/meteoro/api/swagger-ui/index.html
-* skywalker - http://localhost:8097/meteoro/api/swagger-ui/index.html
-* sato - http://localhost:8098/meteoro/api/swagger-ui/index.html
+* kenobi - http://localhost:8096/swagger-ui/index.html
+* skywalker - http://localhost:8097/swagger-ui/index.html
+* sato - http://localhost:8098/swagger-ui/index.html
 ![img_4.png](img_4.png)
 
 
